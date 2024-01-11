@@ -1,0 +1,16 @@
+package com.internship.day15.junit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class UserTest {
+
+	@Test
+	public void checks() {
+		String name="ATHARVA";
+		int age= 15;
+		User u = new User();
+		assertEquals(name, u.getName());
+	}
+}

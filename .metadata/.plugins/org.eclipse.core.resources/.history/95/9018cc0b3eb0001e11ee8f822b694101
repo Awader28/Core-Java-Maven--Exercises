@@ -1,0 +1,17 @@
+package com.internship.day16.database.queries;
+
+import com.internship.day16.database.repository.Create;
+
+public class Insert implements Create {
+	
+	static String insert = "INSERT INTO tblEmployee (id, name, city, salary) VALUES (15, 'Atharva','Raipur',12345);";
+			
+
+	@Override
+	public void add() {
+		
+		// TODO Auto-generated method stub
+		Statement stat= 
+	}
+
+}

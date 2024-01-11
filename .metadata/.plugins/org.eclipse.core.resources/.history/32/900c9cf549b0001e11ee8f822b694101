@@ -1,0 +1,5 @@
+package com.internship.day16.database.dynamic.repo;
+
+public class Update {
+
+}

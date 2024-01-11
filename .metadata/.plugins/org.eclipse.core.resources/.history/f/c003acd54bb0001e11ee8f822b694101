@@ -1,0 +1,13 @@
+package com.internship.day16.database.dynamic;
+
+import com.internship.day16.database.dynamic.repo.Update;
+
+public class UpdateQu implements Update{
+	public static String upd="UPDATE tblEmployee SET name='Dineshwar', city='Agra' WHERE id=17;";
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

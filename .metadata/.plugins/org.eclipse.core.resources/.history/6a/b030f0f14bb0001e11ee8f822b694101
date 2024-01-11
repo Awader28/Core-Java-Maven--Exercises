@@ -1,0 +1,19 @@
+package com.internship.day16.database.dynamic;
+
+import java.io.IOException;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.internship.day16.database.dynamic.repo.Update;
+
+public class UpdateQu implements Update{
+	public static String upd="UPDATE tblEmployee SET name=?, city=? WHERE id=?;";
+	@Override
+	public void update() throws ClassNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		PreparedStatement p=Connectiondb.getConnection2().prepareStatement(upd);
+		
+		Sc
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.internship.day15.junit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class DatabaseConnectionTest {
+	@Test
+	public void checkUrl() {
+		DatabaseConnection dbc = new DatabaseConnection();
+		assertEquals(con,dbc.connection());		
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.internship.day16.database.queries;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.internship.day16.database.repository.Create;
+
+public class InsertQ implements Create {
+
+	static String insert = "INSERT INTO tblEmployee (id, name, city, salary) VALUES (15, 'Atharva','Raipur',12345);";
+
+	@Override
+	public void add() throws ClassNotFoundException, SQLException, IOException {
+		
+		Statement st= DbConnection.getConnection().createStatement();
+
+	}
+
+}

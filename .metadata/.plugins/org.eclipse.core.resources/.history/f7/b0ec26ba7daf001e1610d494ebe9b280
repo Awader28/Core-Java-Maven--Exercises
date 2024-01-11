@@ -1,0 +1,15 @@
+package com.internship.day15.junit;
+
+import org.junit.jupiter.api.Test;
+
+public class OpTest {
+	@Test	
+	public void display() {
+		Operation op=new Operation();
+		int x=50;
+		int z=op.add(30, 20);
+		assertEquals(x,z);
+		
+	}
+
+}

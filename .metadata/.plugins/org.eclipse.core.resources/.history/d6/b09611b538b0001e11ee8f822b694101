@@ -1,0 +1,31 @@
+package com.internship.day15.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DatabaseConnection {
+    public static String url = "jdbc:mysql://localhost:3306/avion?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
+    public static String user = "root";
+    public static String pass = "atharva28";
+
+    public static void connection() {
+        String driver = "com.mysql.jdbc.Driver";
+
+        try {
+            Class.forName(driver);
+            Connection con = DriverManager.getConnection(url, user, pass);
+            System.out.println("CONNECTION SUCCESSFUL");
+        } catch (ClassNotFoundException e1) {
+            System.out.println("DATABASE DRIVER NOT FOUND");
+        } catch (SQLException e) {
+            System.out.println("SQL RELATED EXCEPTION: " + e.getMessage());
+        }
+    }
+    
+    public static void main(String[] args) {
+		DatabaseConnection dbc= new DatabaseConnection();
+		dbc.connection();
+	}
+}
+	

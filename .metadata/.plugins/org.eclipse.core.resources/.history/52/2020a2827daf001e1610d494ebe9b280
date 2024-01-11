@@ -1,0 +1,10 @@
+package com.internship.day15.junit;
+
+public class OpTest {
+	
+	public void display() {
+		Operation op=new Operation();
+		op.add(30, 20)
+	}
+
+}

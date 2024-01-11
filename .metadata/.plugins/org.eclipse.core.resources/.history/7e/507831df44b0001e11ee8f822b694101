@@ -1,0 +1,18 @@
+package com.internship.day16.database.queries;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.internship.day16.database.repository.Fetch;
+
+public class FetchQ implements Fetch{
+	
+	public static String fetch= "select id, name, city, salary from tblEmployee;";
+	@Override
+	public void display() throws ClassNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		Statement st= DbConnection.getConnection1().createStatement();
+	}
+
+}

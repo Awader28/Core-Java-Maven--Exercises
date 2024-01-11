@@ -1,0 +1,19 @@
+package com.internship.day16.database.queries;
+
+import java.sql.Statement;
+
+import com.internship.day16.database.repository.Update;
+
+public class UpdateQ implements Update {
+	
+	public static String upd="UPDATE tblEmployee, SET name ='Dineshwar', city='Agra' where id=17;";
+
+	 public void update() {
+		// TODO Auto-generated method stub
+		Statement st = DbConnection.getConnection1().createStatement();
+
+		st.execute(upd);
+		System.out.println("DEL SFUL");
+	}
+
+}

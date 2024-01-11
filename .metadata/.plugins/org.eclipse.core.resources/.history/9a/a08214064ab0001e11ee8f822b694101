@@ -1,0 +1,6 @@
+package com.internship.day16.database.dynamic.repo;
+
+public interface Delete {
+	void delete();
+
+}

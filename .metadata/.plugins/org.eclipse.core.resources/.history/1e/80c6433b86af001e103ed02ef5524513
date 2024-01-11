@@ -1,0 +1,10 @@
+package com.internship.day15.junit;
+
+public class User {
+	
+	private int age;
+	private String name;
+	
+	
+
+}

@@ -1,0 +1,10 @@
+package com.internship.day16.database.queries;
+
+public class Caller {
+	
+	public static void main(String[] args) {
+		InsertQ i = new InsertQ();
+		i.add();
+	}
+
+}

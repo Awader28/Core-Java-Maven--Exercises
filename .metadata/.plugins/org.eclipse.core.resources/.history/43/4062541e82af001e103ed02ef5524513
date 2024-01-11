@@ -1,0 +1,22 @@
+package com.internship.day15.junit;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class DatabaseConnectionTest {
+
+    @Test
+    public void testConnectionParameters() {
+        String expectedURL = "jdbc:mysql://localhost:3306/avion?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
+        String expectedUser = "root";
+        String expectedPass = "atharva28";
+
+        // Call the method that establishes the connection
+        DatabaseConnection.connection();
+
+        // Check if the actual parameters match the expected parameters
+        assertEquals(expectedURL, DatabaseConnection.url);
+        assertEquals(expectedUser, DatabaseConnection.username);
+        assertEquals(expectedPass, DatabaseConnection.pass);
+    }
+}

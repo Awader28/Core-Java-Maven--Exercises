@@ -1,0 +1,5 @@
+package com.internship.day16.singleresponsibility.database;
+
+public interface Delete {
+
+}

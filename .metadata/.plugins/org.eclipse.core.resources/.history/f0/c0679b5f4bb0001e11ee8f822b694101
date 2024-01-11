@@ -1,0 +1,19 @@
+package com.internship.day16.database.dynamic;
+
+import java.io.IOException;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.internship.day16.database.dynamic.repo.Delete;
+
+public class DeleteQu implements Delete {
+	public static String del = "DELETE FROM tblEmployee WHERE id=?;";
+
+	@Override
+	public void delete() throws ClassNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		PreparedStatement p=Connectiondb.getConnection2().prepareStatement(del);
+
+	}
+
+}

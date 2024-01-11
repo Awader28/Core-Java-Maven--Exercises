@@ -1,0 +1,14 @@
+package com.internship.day16.database.queries;
+
+import com.internship.day16.database.repository.Fetch;
+
+public class FetchQ implements Fetch{
+	
+	public static String fetch= "select id, name, cit;y, salary, ";
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

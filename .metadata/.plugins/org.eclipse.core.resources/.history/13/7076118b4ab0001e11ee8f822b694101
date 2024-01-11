@@ -1,0 +1,15 @@
+package com.internship.day16.database.dynamic;
+
+import com.internship.day16.database.dynamic.repo.Delete;
+
+public class DeleteQu implements Delete{
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

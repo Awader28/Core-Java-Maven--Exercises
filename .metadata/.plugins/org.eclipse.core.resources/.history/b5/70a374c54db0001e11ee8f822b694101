@@ -1,0 +1,16 @@
+package com.internship.day16.database.dynamic;
+
+import com.internship.day16.database.dynamic.repo.Fetch;
+
+public class FetchQu implements Fetch {
+	public static String fetch= "select id, name, city, salary from tblEmployee;";
+
+	@Override
+	public void fetch() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

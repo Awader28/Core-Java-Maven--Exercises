@@ -1,0 +1,46 @@
+package com.internship.day15.junit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class IgnoreAnnot {
+	
+	@BeforeEach
+	public void demos() {
+		System.out.println("before");
+	}
+	@AfterEach
+	public void demons(){
+		System.out.println("After");
+	}
+
+	
+	@BeforeAll
+	public static void demonsi() {
+		System.out.println("FIRST AND LAST");
+	}
+	
+	@Test
+	public void demo() {
+		Operation op = new Operation();
+
+		int x = 90;
+		int z = op.mul(45, 2);
+		assertEquals(x, z);
+		System.out.println("HELLO");
+	}
+	
+
+	@Test
+	public void display() {
+		Operation op = new Operation();
+		int x = 50;
+		int z = op.add(20, 30);
+		assertEquals(x, z);
+		System.out.println("hlo");
+	}
+}

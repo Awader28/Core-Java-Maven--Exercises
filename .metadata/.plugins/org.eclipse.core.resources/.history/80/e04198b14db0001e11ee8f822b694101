@@ -1,0 +1,9 @@
+package com.internship.day16.database.dynamic;
+
+import com.internship.day16.database.dynamic.repo.Fetch;
+
+public class FetchQu implements Fetch {
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package com.internship.day16.database.dynamic;
+
+public class DeleteQu implements Delete{
+	
+	
+
+}

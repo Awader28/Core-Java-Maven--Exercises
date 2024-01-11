@@ -1,0 +1,11 @@
+package com.internship.day16.database.repository;
+
+import com.internship.day15.jdbc.ConnectionDB;
+
+public class DbConnection {
+	
+	public ConnectionDB getConnection() {
+		
+	}
+
+}

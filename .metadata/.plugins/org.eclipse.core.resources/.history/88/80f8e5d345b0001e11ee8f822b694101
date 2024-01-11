@@ -1,0 +1,13 @@
+package com.internship.day16.database.queries;
+
+import com.internship.day16.database.repository.Delete;
+
+public class DeleteQ implements Delete {
+	public static String del="DELETE FROM tblEmployee WHERE id=16"
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

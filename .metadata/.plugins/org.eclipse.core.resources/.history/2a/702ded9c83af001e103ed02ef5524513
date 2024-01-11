@@ -1,0 +1,23 @@
+package com.internship.day15.junit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Ignore;
+import org.junit.jupiter.api.Test;
+
+public class Demo {
+
+	@Test
+	@Ignore
+	void demo () {
+		System.out.println("HELLO");
+	}
+	
+	@Test
+	void display() {
+		Operation op=new Operation();
+		int x=50;
+		int z= op.add(20, 30);
+		assertEquals(x,z);
+	}
+}

@@ -1,0 +1,22 @@
+package com.internship.day16.database.queries;
+
+import java.sql.Statement;
+
+import com.internship.day16.database.repository.Update;
+
+public class UpdateQ implements Update {
+	
+	public static String upd="Statement st= DbConnection.getConnection1().createStatement();\r\n"
+			+ "		\r\n"
+			+ "		st.execute(del);\r\n"
+			+ "		System.out.println(\"DEL SFUL\");";
+
+	public @Override public void update() {
+		// TODO Auto-generated method stub
+		Statement st = DbConnection.getConnection1().createStatement();
+
+		st.execute(del);
+		System.out.println("DEL SFUL");
+	}
+
+}

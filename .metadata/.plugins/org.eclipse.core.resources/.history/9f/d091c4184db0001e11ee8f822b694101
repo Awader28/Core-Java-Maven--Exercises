@@ -1,0 +1,17 @@
+package com.internship.day16.database.dynamic;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+import com.internship.day16.database.dynamic.repo.Create;
+
+public class InsertQu implements Create{
+	static String insert = "INSERT INTO tblEmployee (id, name, city, salary) VALUES (20, 'Atharva','Raipur',12345);";
+
+	@Override
+	public void add() throws ClassNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

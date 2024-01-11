@@ -1,0 +1,21 @@
+package com.internship.day16.database.dynamic;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+public class Caller {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
+		DeleteQu q = new DeleteQu();
+		q.delete();
+		
+		UpdateQu u=new UpdateQu();
+		u.update();
+		
+		InsertQu i= new InsertQu();
+		i.add();
+		
+		FetchQu f= new FetchQu();
+		f.fetch();
+	}
+
+}

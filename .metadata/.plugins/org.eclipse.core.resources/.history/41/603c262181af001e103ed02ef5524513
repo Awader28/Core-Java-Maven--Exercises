@@ -1,0 +1,9 @@
+package com.internship.day15.junit;
+
+public class DatabaseConnectionTest {
+	
+	public void checkUrl() {
+		DatabaseConnection dbc = new DatabaseConnection();
+	}
+
+}

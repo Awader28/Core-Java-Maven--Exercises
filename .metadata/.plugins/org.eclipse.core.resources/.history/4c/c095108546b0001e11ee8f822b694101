@@ -1,0 +1,13 @@
+package com.internship.day16.database.queries;
+
+import com.internship.day16.database.repository.Update;
+
+public class UpdateQ implements Update{
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.internship.day16.database.dynamic;
+
+import com.internship.day16.database.dynamic.repo.Delete;
+
+public class DeleteQu implements Delete {
+	public static String del = "DELETE FROM tblEmployee WHERE id=?;";
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		preparedStatement p=Connectiondb.getConnection2().prepareCall(del);
+
+	}
+
+}
